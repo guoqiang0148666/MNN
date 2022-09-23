@@ -14,3 +14,10 @@ target_link_libraries(segment.out MNN_Express ${MNN_DEPEND})
 
 add_executable(expressDemo.out expressDemo.cpp)
 target_link_libraries(expressDemo.out MNN_Express ${MNN_DEPEND})
+
+# support frcnn
+add_executable(frcnn.out frcnn.cpp)
+target_link_libraries(frcnn.out ${MNN_DEPEND})
+
+find_package(OpenCV REQUIRED)
+target_link_libraries(frcnn.out ${OpenCV_LIBS} )

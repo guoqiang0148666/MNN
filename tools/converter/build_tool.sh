@@ -8,6 +8,6 @@ fi
 mkdir build
 cd build
 
-cmake ..
+cmake .. -DCMAKE_PREFIX_PATH=/home/guo/protobuf3-install/
 make clean
 make -j16

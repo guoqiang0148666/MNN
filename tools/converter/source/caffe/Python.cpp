@@ -33,7 +33,7 @@ void Python::run(MNN::OpT* dstOp, const caffe::LayerParameter& parameters, const
     }
     proposal->baseSize         = 8;
     proposal->preNmsTopN       = 300;
-    proposal->afterNmsTopN     = 32;
+    proposal->afterNmsTopN     = 300;
     proposal->nmsThreshold     = 0.7f;
     proposal->minSize          = 3;
     proposal->ratios           = std::unique_ptr<MNN::BlobT>(new MNN::BlobT);
